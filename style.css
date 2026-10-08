@@ -1,0 +1,352 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(252, 250, 247);
+}
+
+.links a{
+    color: #43210C;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links ol{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+
+.nav-emoji{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart{
+    position: relative;
+}
+
+.cart span {
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;             /* Balanced horizontal padding */
+    border-radius: 50px;          /* 50px or '50%' is plenty for a capsule/circle */
+    position: absolute;
+    right: -5px;
+    display: inline-flex;         /* Fixes the layout constraint */
+    justify-content: center;      /* Centers the text inside */
+    align-items: center;          /* Centers the text inside */
+    min-width: 16px;              /* Ensures it stays round if the number is small */
+    height: 16px;                 /* Keeps a consistent vertical size */
+}
+
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(252, 250, 247);
+}
+
+.new{
+    color: goldenrod;
+    margin-bottom: 20px;
+}
+
+.main h1{
+    color: goldenrod;
+}
+
+.image{
+    position: relative;
+}
+
+.off{
+    position: absolute;
+    right: 0px;
+    border: 5px solid white;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px #43210C;
+}
+
+.child{
+    filter: drop-shadow(0px 0px 10px #43210C);
+}
+
+.child:hover{
+    height: 550px;
+}
+
+.essential{
+    color: rgb(227, 185, 129);
+}
+
+.drop{
+    color: black;
+    margin: 20px 0px;
+}
+
+.button{
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.features-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #e4dfd9;
+    padding: 15px 10px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    gap: 15px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature-item .icon {
+    font-size: 24px;
+}
+
+.feature-item strong {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #111;
+}
+
+.feature-item p {
+    font-size: 11px;
+    color: #666;
+    margin-top: 1px;
+}
+
+.one{
+    border-radius: 40px;
+}
+
+.one:hover{
+    box-shadow: 0px 0px 10px #40200c;
+}
+
+/* Responsive Product Grid layout */
+.product-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product Card structure */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #e7e5e5; /* Card element container color background */
+    border-radius: 16px;
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply; /* Helps blend item backgrounds if transparent */
+    align-items: center;
+}
+
+/* Text Detail block underneath */
+.product-info {
+    padding: 12px 4px;
+}
+
+.product-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 2px;
+    align-items: left;
+}
+
+.product-price {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.rating {
+    font-size: 11px;
+    color: #cca43b; /* Gold color matching the rating stars */
+    letter-spacing: 1px;
+}
+
+.product-card:hover , .sale1:hover , .sale2:hover{
+    box-shadow: 0px 0px 10px #40200c;
+}
+
+.sale{
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.sale1{
+    display: flex;
+    flex-direction: column;
+    background-color: #e7e5e5; /* Card element container color background */
+    border-radius: 16px;
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sales{
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.shop h3{
+    font-size: 50px;
+    font-family: 'Aldhabi';
+    padding: 15px 0px;
+    line-height: 1cm;
+    letter-spacing: 0.01;
+    color: #40200c;
+}
+
+.shop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.newsletter-banner {
+    display: flex;
+    align-items: center;
+    background-color: #FDF0E6; /* Light cream peach color */
+    border-radius: 20px;       /* Rounded corners from image */
+    margin: 40px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left side layout constraints */
+.banner-image {
+    align-items: left;
+    border-radius: 25px;
+}
+
+
+/* Right side content layout */
+.banner-content {
+    flex: 1;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-content h5 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.banner-content h2 {
+    font-size: 32px;
+    font-family: 'Georgia', serif; /* Serif typography for the header */
+    color: #4A2E2B;               /* Deep brown tone */
+    margin: 0 0 15px 0;
+}
+
+.banner-content p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 25px 0;
+}
+
+/* Subscription Form Row Layout */
+.subscribe-form {
+    display: flex;
+    width: 750px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-right: none; /* Merges input and button borders cleanly */
+    font-size: 14px;
+    outline: none;
+    background-color: #fff;
+}
+
+.subscribe-form button {
+    background-color: #000000; /* Crisp black button background */
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #222222;
+}
+.subscribe-form:hover {
+    box-shadow: 0px 0px 10px #40200c;
+}
+
+.newsletter-banner:hover {
+    box-shadow: 0px 0px 10px #40200c;
+}
+
